@@ -128,13 +128,6 @@ plt.plot(w, HdBcomp_up, label='CIC compensation filter')
 
 plt.plot(w, HdB_first+HdB_second+HdBcomp_up,
          label = 'cascaded CIC#1 -> CIC#2 -> CIC comp. filter')
-#Hsum = np.zeros(len(HdBcomp_up))
-#midHdB = Nfft*FOSR/2
-#Hcrop = HdB[int(midHdB-len(Hsum)/2):int(midHdB+len(Hsum)/2)]
-#Hsum = HdBcomp_up+Hcrop
-
-
-
 
 plt.grid()
 plt.legend()

@@ -132,3 +132,12 @@ plt.plot(w, HdB_first+HdB_second+HdBcomp_up,
 plt.grid()
 plt.legend()
 plt.show()
+
+#------------------------------------------------
+# Print values
+#------------------------------------------------
+def print_values(label, values):
+    var = "float32_t %s[%d]" % (label, len(values))
+    print ("%-30s = {%s}" % (var, ', '.join(["%+.10f" % x for x in values])))
+ 
+print_values('cic_compensation_fir_coeff', hcomp)
